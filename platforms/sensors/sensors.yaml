@@ -1,8 +1,0 @@
-- platform: dsmr
-  port: /dev/ttyUSB0
-  dsmr_version: 4
-
-- platform: yr
-
-- platform: rfxtrx
-  automatic_add: True
