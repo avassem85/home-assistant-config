@@ -2,6 +2,6 @@
   username: !secret ICLOUD_USERNAME
   password: !secret ICLOUD_PASSWORD
 
-- platform: fritz
-  host: !secret FRITZBOX_HOST
-  password: !secret FRITZBOX_PASSWORD
+# - platform: fritz
+#   host: !secret FRITZBOX_HOST
+#   password: !secret FRITZBOX_PASSWORD
