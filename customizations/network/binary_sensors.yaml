@@ -6,15 +6,15 @@ binary_sensor.fritzbox:
 
 binary_sensor.afirouter:
   friendly_name: AmpliFi Router
-  icon: mdi-access-point-network
+  icon: mdi:access-point-network
 
 binary_sensor.afimeshpointupstairs:
   friendly_name: AmpliFi MeshPoint Boven
-  icon: mdi-access-point
+  icon: mdi:access-point
 
 binary_sensor.afimeshpointdownstairs:
   friendly_name: AmpliFi MeshPoint Beneden
-  icon: mdi-access-point
+  icon: mdi:access-point
 
 # home automation devices
 
