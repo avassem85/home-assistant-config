@@ -1,0 +1,11 @@
+- platform: sonos
+
+- platform: kodi
+  host: !secret KODI_URL
+  username: !secret KODI_WEBINTERFACE_USERNAME
+  password: !secret KODI_WEBINTERFACE_PASSWORD
+  turn_off_action:
+      service: media_player.kodi_call_method
+      data:
+        entity_id: media_player.kodi
+        method: Application.Quit

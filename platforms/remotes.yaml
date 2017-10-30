@@ -1,0 +1,4 @@
+- platform: harmony
+  name: Woonkamer
+  host: !secret HARMONY_HOST
+  activity: Apple TV kijken

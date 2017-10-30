@@ -1,0 +1,85 @@
+network:
+  name: Netwerk
+  view: yes
+  entities:
+    - group.network_devices
+    - group.pc_devices
+    - group.automation_devices
+    - group.mobile_devices
+    - group.media_devices
+    - group.haveibeenpwned_alex
+    - group.haveibeenpwned_anita
+    - group.speedtest
+    - group.peripherals_devices
+  icon: mdi:server-network
+
+network_devices:
+  name: Netwerk Apparatuur
+  entities:
+    - binary_sensor.fritzbox
+    - binary_sensor.afirouter
+    - binary_sensor.afimeshpointupstairs
+    - binary_sensor.afimeshpointdownstairs
+
+pc_devices:
+  name: Computers
+  entities:
+    - binary_sensor.pctigris
+    - binary_sensor.alexsmbp
+    - binary_sensor.laptopanita
+
+automation_devices:
+  name: Home Automation
+  entities:
+    - binary_sensor.harmonyhub
+    - binary_sensor.homey
+    - binary_sensor.huegateway
+    - binary_sensor.tradfrigateway
+    - binary_sensor.googlenest
+    - binary_sensor.hellosense
+    - binary_sensor.koubachi
+    - binary_sensor.nestcamiq
+
+media_devices:
+  name: Media Apparatuur
+  entities:
+    - binary_sensor.sonytv
+    - binary_sensor.iptvxs4all
+    - binary_sensor.steamlink
+    - binary_sensor.appletv
+    - binary_sensor.sonos
+    - binary_sensor.osmc
+
+mobile_devices:
+  name: Telefoon and Tablets
+  entities:
+    - binary_sensor.ipad
+    - binary_sensor.phoneanita
+    - binary_sensor.iphonealex
+
+
+peripherals_devices:
+  name: Randapparatuur
+  entities:
+    - binary_sensor.canonmg5650
+    - binary_sensor.nas
+
+haveibeenpwned_alex:
+  name: HaveIBeenPwned Alex
+  entities:
+    - sensor.breaches_avassemgmailcom
+    - sensor.breaches_alexvanassemeu
+    - sensor.breaches_alexainfosupportcom
+    - sensor.breaches_alexvanasseminfosupportcom
+
+haveibeenpwned_anita:
+  name: HaveIBeenPwned Anita
+  entities:
+    - sensor.breaches_anitabruekergmailcom
+
+speedtest:
+  name: Speedtest
+  entities:
+    - sensor.speedtest_ping
+    - sensor.speedtest_upload
+    - sensor.speedtest_download

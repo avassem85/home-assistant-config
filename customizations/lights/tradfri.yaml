@@ -1,0 +1,20 @@
+light.garderobe_1:
+  homebridge_hidden: true
+
+light.garderobe_2:
+  homebridge_hidden: true
+
+light.garderobe_3:
+  homebridge_hidden: true
+
+light.kantoor_1:
+  homebridge_hidden: true
+
+light.kantoor_2:
+  homebridge_hidden: true
+
+light.kantoor_3:
+  homebridge_hidden: true
+
+light.wc_beneden:
+  homebridge_hidden: true

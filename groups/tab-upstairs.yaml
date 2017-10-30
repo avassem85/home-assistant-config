@@ -1,0 +1,41 @@
+upstairs:
+  name: Bovenverdieping
+  view: yes
+  entities:
+    - group.bedroom1
+    - group.bedroom2
+    - group.bathroom
+
+bedroom1:
+  name: Slaapkamer Alex & Anita
+  entities:
+    - light.slaapkamer
+    - group.master_bedroom_hue_lighting
+
+master_bedroom_hue_lighting:
+  name: Hue Lampen
+  entities:
+    - light.slaapkamer_1
+    - light.slaapkamer_2
+    - light.slaapkamer_3
+
+bathroom:
+  name: Badkamer
+  entities:
+    - sensor.badkamer_temperature
+    - sensor.badkamer_humidity
+
+bedroom2:
+  name: Slaapkamer Elise
+  entities:
+    - light.babykamer
+    - group.bedroom2_hue_lighting
+    - sensor.babykamer_temperature
+    - sensor.babykamer_humidity
+
+bedroom2_hue_lighting:
+  name: Hue Lampen
+  entities:
+    - light.babykamer_1
+    - light.babykamer_2
+    - light.babykamer_3

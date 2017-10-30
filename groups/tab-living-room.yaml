@@ -1,0 +1,76 @@
+living_room:
+  name: Woonverdieping
+  view: yes
+  entities:
+    - group.dining_room_lighting
+    - group.kitchen_lightning
+    - group.living_room_plant
+    - group.living_room_lighting
+    - group.living_room_climate
+    - group.living_room_media
+    - group.living_room_media_devices
+
+living_room_plant:
+  name: Woonkamper Plant
+  entities:
+    - sensor.koubachi_name
+    - sensor.koubachi_temperature_hint
+    - sensor.koubachi_temperature
+
+living_room_climate:
+  name: Verwarming woonkamer
+  entities:
+    - climate.living_room_woonkamer
+    - sensor.living_room_thermostat_woonkamer_humidity
+    - binary_sensor.living_room_thermostat_woonkamer_online
+
+living_room_lighting:
+  name: Verlichting woonkamer
+  entities:
+    - switch.fibaro_system_fgs221_double_relay_switch_2x15kw_switch_11_0
+    - light.woonkamer
+    - group.living_room_hue_lighting
+    - switch.fibaro_system_fgwpe_wall_plug_switch_5_0
+
+living_room_hue_lighting:
+  name: Hue Lampen
+  entities:
+    - light.woonkamer_1
+    - light.woonkamer_2
+    - light.woonkamer_3
+
+dining_room_lighting:
+  name: Verlichting eetkamer
+  entities:
+    - light.eetkamer
+    - group.dining_room_hue_lighting
+
+dining_room_hue_lighting:
+  name: Hue Lampen
+  entities:
+    - light.eetkamer_1
+    - light.eetkamer_2
+
+kitchen_lightning:
+  name: Verlichting keuken
+  entities:
+    - light.qubino_zmnhda2_flush_dimmer_level_13_0
+
+living_room_media:
+  name: Media
+  entities:
+    - remote.woonkamer
+    - sensor.harmony_current_activity
+    - input_select.harmony_activity
+    - media_player.sonos_woonkamer
+    - light.osmc
+
+living_room_media_devices:
+  name: Media
+  entities:
+    - switch.greenwave_powernode_6_port_switch_8_0
+    - switch.greenwave_powernode_6_port_switch_8_0_2
+    - switch.greenwave_powernode_6_port_switch_8_0_3
+    - switch.greenwave_powernode_6_port_switch_8_0_4
+    - switch.greenwave_powernode_6_port_switch_8_0_5
+    - switch.greenwave_powernode_6_port_switch_8_0_6

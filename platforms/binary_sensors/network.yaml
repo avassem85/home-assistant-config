@@ -1,0 +1,115 @@
+# network devices
+
+- platform: ping
+  name: Fritzbox
+  host: fritz.box
+
+- platform: ping
+  name: AFi-Router
+  host: AFi-Router
+
+- platform: ping
+  name: AFi-MeshPoint-Downstairs
+  host: AFi-MeshPoint-Downstairs
+
+- platform: ping
+  name: AFi-MeshPoint-Upstairs
+  host: AFi-MeshPoint-Upstairs
+
+# home automation devices
+
+- platform: ping
+  name: Tradfri-Gateway
+  host: Tradfri-Gateway
+
+- platform: ping
+  name: Hue-Gateway
+  host: Hue-Gateway
+
+- platform: ping
+  name: Homey
+  host: Homey
+
+- platform: ping
+  name: HarmonyHub
+  host: HarmonyHub
+
+- platform: ping
+  name: HelloSense
+  host: HelloSense
+
+- platform: ping
+  name: Nest-Cam-IQ
+  host: Nest-Cam-IQ
+
+- platform: ping
+  name: GoogleNest
+  host: GoogleNest
+
+- platform: ping
+  name: Koubachi
+  host: Koubachi
+
+# media devices
+
+- platform: ping
+  name: IPTV-XS4ALL
+  host: IPTV-XS4ALL
+
+- platform: ping
+  name: Sonos
+  host: Sonos
+
+- platform: ping
+  name: AppleTV
+  host: AppleTV
+
+- platform: ping
+  name: osmc
+  host: osmc
+
+- platform: ping
+  name: Steamlink
+  host: Steamlink
+
+- platform: ping
+  name: SonyTV
+  host: SonyTV
+
+# computer devices
+
+- platform: ping
+  name: Laptop-Anita
+  host: Laptop-Anita
+
+- platform: ping
+  name: PC-TIGRIS
+  host: PC-TIGRIS
+
+- platform: ping
+  name: Alexs-MBP
+  host: Alexs-MBP
+
+# peripherals devices
+
+- platform: ping
+  name: CanonMG5650
+  host: CanonMG5650
+
+- platform: ping
+  name: Nas
+  host: Nas
+
+# Mobile devices
+
+- platform: ping
+  name: iPad
+  host: iPad
+
+- platform: ping
+  name: iPhone-Alex
+  host: iPhone-Alex
+
+- platform: ping
+  name: Phone-Anita
+  host: Phone-Anita

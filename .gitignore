@@ -1,0 +1,17 @@
+.uuid
+.HA_VERSION
+*.db
+*.log
+*.conf
+*.xml
+*.txt
+*.sqlite
+deps
+hadaemon
+homebridge
+icloud
+old_config
+tts
+home-assistant_v2.db*
+secrets.yaml
+known_devices.yaml

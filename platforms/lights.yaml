@@ -1,0 +1,8 @@
+- platform: hue
+  host: !secret HUE_HOST
+  allow_unreachable: true
+  allow_hue_groups: false
+
+- platform: hyperion
+  host: !secret HYPERION_HOST
+  name: Ledstrip

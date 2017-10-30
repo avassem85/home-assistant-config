@@ -1,0 +1,38 @@
+light.babykamer_1:
+  homebridge_hidden: true
+
+light.babykamer_2:
+  homebridge_hidden: true
+
+light.babykamer_3:
+  homebridge_hidden: true
+
+light.slaapkamer_1:
+  homebridge_hidden: true
+
+light.slaapkamer_2:
+  homebridge_hidden: true
+
+light.slaapkamer_3:
+  homebridge_hidden: true
+
+light.woonkamer_1:
+  homebridge_hidden: true
+
+light.woonkamer_2:
+  homebridge_hidden: true
+
+light.woonkamer_3:
+  homebridge_hidden: true
+
+light.eetkamer_1:
+  homebridge_hidden: true
+
+light.eetkamer_2:
+  homebridge_hidden: true
+
+light.gang_beneden:
+  homebridge_hidden: true
+
+light.washok:
+  homebridge_hidden: true

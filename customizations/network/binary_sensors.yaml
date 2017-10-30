@@ -1,0 +1,115 @@
+# network devices
+
+binary_sensor.fritzbox:
+  friendly_name: Fritzbox Router
+  icon: mdi:router-wireless
+
+binary_sensor.afirouter:
+  friendly_name: AmpliFi Router
+  icon: mdi-access-point-network
+
+binary_sensor.afimeshpointupstairs:
+  friendly_name: AmpliFi MeshPoint Boven
+  icon: mdi-access-point
+
+binary_sensor.afimeshpointdownstairs:
+  friendly_name: AmpliFi MeshPoint Beneden
+  icon: mdi-access-point
+
+# home automation devices
+
+binary_sensor.harmonyhub:
+  friendly_name: Harmony Hub
+  icon: mdi:remote
+
+binary_sensor.homey:
+  friendly_name: Homey
+  icon: mdi:security-home
+
+binary_sensor.huegateway:
+  friendly_name: Hue Gateway
+  icon: mdi:lightbulb
+
+binary_sensor.tradfrigateway:
+  friendly_name: Tradfri Gateway
+  icon: mdi:lightbulb
+
+binary_sensor.googlenest:
+  friendly_name: Google Nest Thermostat
+  icon: mdi:thermometer
+
+binary_sensor.hellosense:
+  friendly_name: Hello Sense Sleep Sensor
+  icon: mdi:bell-sleep
+
+binary_sensor.koubachi:
+  friendly_name: Koubachi Plant Sensor
+  icon: mdi:pine-tree
+
+binary_sensor.nestcamiq:
+  friendly_name: Google Nestcam IQ
+  icon: mdi:webcam
+
+# media devices
+
+binary_sensor.sonytv:
+  friendly_name: Sony TV
+  icon: mdi:television
+
+binary_sensor.iptvxs4all:
+  friendly_name: IPTV xs4all
+  icon: mdi:movie
+
+binary_sensor.steamlink:
+  friendly_name: Steam Link
+  icon: mdi:gamepad-variant
+
+binary_sensor.appletv:
+  friendly_name: Apple TV
+  icon: mdi:apple
+
+binary_sensor.sonos:
+  friendly_name: Sonos Speakers
+  icon: mdi:surround-sound
+
+binary_sensor.osmc:
+  friendly_name: Kodi Media Player
+  icon: mdi:movie
+
+# computer devices
+
+binary_sensor.pctigris:
+  friendly_name: PC Alex
+  icon: mdi:desktop-tower
+
+binary_sensor.alexsmbp:
+  friendly_name: Macbook Alex
+  icon: mdi:laptop-mac
+
+binary_sensor.laptopanita:
+  friendly_name: Laptop Anita
+  icon: mdi:laptop
+
+# peripherals devices
+
+binary_sensor.canonmg5650:
+  friendly_name: Canon MG5660 Printer
+  icon: mdi:printer
+
+binary_sensor.nas:
+  friendly_name: Synology NAS
+  icon: mdi:harddisk
+
+# Mobile devices
+
+binary_sensor.ipad:
+  friendly_name: iPad
+  icon: mdi:tablet-ipad
+
+binary_sensor.phoneanita:
+  friendly_name: Telefoon Anita
+  icon: mdi:cellphone-android
+
+binary_sensor.iphonealex:
+  friendly_name: iPhone Alex
+  icon: mdi:cellphone-iphone
