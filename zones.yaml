@@ -1,0 +1,17 @@
+- name: Home
+  latitude: !secret HOME_LATITUDE
+  longitude: !secret HOME_LONGITUDE
+  radius: 100
+  icon: mdi:home
+
+- name: Werk Alex
+  latitude: !secret WORK_ALEX_LATITUDE
+  longitude: !secret WORK_ALEX_LONGITUDE
+  radius: 100
+  icon: mdi:briefcase
+
+- name: Werk Anita
+  latitude: !secret WORK_ANITA_LATITUDE
+  longitude: !secret WORK_ANITA_LONGITUDE
+  radius: 100
+  icon: mdi:briefcase
