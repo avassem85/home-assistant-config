@@ -1,6 +1,6 @@
-- platform: icloud
-  username: !secret ICLOUD_USERNAME
-  password: !secret ICLOUD_PASSWORD
+# - platform: icloud
+#   username: !secret ICLOUD_USERNAME
+#   password: !secret ICLOUD_PASSWORD
 
 # - platform: fritz
 #   host: !secret FRITZBOX_HOST
