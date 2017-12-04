@@ -2,7 +2,7 @@
 
 - platform: ping
   name: Fritzbox
-  host: fritz.box
+  host: Fritz.box
 
 - platform: ping
   name: AFi-Router
