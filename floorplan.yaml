@@ -32,6 +32,10 @@
         - name: Lights
           entities:
             - light.washok_1
+            - light.wc_beneden
+            - light.gang_beneden_1
+            - group.office_hue_lighting
+            - group.wardrobe_hue_lighting
             - group.living_room_hue_lighting
             - group.dining_room_hue_lighting
             - group.kitchen_lightning
