@@ -18,6 +18,11 @@ config:
 # Enables configuration Hassio
 hassio:
 
+recorder:
+  purge_interval: 1
+  purge_keep_days: 2
+  db_url: !secret RECORDER_DB_URL
+
 http:
   api_password: !secret HTTP_PASSWORD
   ssl_certificate: !secret SSL_CERTIFICATE
@@ -53,7 +58,7 @@ tts:
 nest:
   client_id: !secret NEST_CLIENT_ID
   client_secret: !secret NEST_CLIENT_SECRET
-
+  
 rfxtrx:
   device: /dev/ttyUSB1
 
@@ -70,7 +75,6 @@ binary_sensor: !include_dir_merge_list platforms/binary_sensors
 
 tradfri:
   host: !secret TRADFRI_HOST
-  api_key: !secret TRADFRI_API_KEY
   allow_tradfri_groups: false
 
 apple_tv:
@@ -82,3 +86,10 @@ group: !include_dir_merge_named groups
 zone: !include zones.yaml
 automation: !include automations.yaml
 script: !include scripts.yaml
+
+panel_custom:
+  - name: floorplan
+    sidebar_title: Floorplan
+    sidebar_icon: mdi:home
+    url_path: floorplan
+    config: !include floorplan.yaml
