@@ -1,0 +1,8 @@
+sensor.since_last_boot:
+  hidden: true
+  homebridge_hidden: true
+
+sensor.since_last_boot_templated:
+  friendly_name: Since last boot
+  hidden: false
+  homebridge_hidden: true
