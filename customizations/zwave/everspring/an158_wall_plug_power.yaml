@@ -1,0 +1,17 @@
+# Everspring AN158 Plug-in Meter Appliance Module Energy - Washok (Ongebruikt)
+
+sensor.everspring_an158_plugin_meter_appliance_module_energy:
+  friendly_name: Woonkamer - Kerstverlichting - kWh Meter
+  hidden: true
+  homebridge_hidden: true
+
+sensor.everspring_an158_plugin_meter_appliance_module_power:
+  friendly_name: Woonkamer - Kerstverlichting - Verbruik
+
+switch.everspring_an158_plugin_meter_appliance_module_switch:
+  friendly_name: Woonkamer - Kerstverlichting
+  homebridge_name: Kerstverlichting
+
+sensor.everspring_an158_plugin_meter_appliance_module_previous_reading:
+  hidden: true
+  homebridge_hidden: true

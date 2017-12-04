@@ -1,0 +1,151 @@
+# GreenWave PowerNode 6 - Woonkamer - Port 1
+
+sensor.greenwave_powernode_6_woonkamer_energy:
+  friendly_name: Woonkamer - PowerNode - Apple TV - kWh Meter
+  hidden: true
+  homebridge_hidden: true
+
+sensor.greenwave_powernode_6_woonkamer_power:
+  friendly_name: Woonkamer - PowerNode - Apple TV - Verbruik
+  hidden: false
+  homebridge_hidden: false
+
+switch.greenwave_powernode_6_woonkamer_switch:
+  friendly_name: Woonkamer - PowerNode - Apple TV
+  hidden: false
+  homebridge_hidden: true
+
+# GreenWave PowerNode 6 - Woonkamer - Port 2
+
+sensor.greenwave_powernode_6_woonkamer_energy_2:
+  friendly_name: Woonkamer - PowerNode - Steamlink - kWh Meter
+  hidden: true
+  homebridge_hidden: true
+
+sensor.greenwave_powernode_6_woonkamer_power_2:
+  friendly_name: Woonkamer - PowerNode - Steamlink - Verbruik
+  hidden: false
+  homebridge_hidden: false
+
+switch.greenwave_powernode_6_woonkamer_switch_2:
+  friendly_name: Woonkamer - PowerNode - Steamlink
+  hidden: false
+  homebridge_hidden: true
+
+# GreenWave PowerNode 6 - Woonkamer - Port 3
+
+sensor.greenwave_powernode_6_woonkamer_energy_3:
+  friendly_name: Woonkamer - PowerNode - IPTV - kWh Meter
+  hidden: true
+  homebridge_hidden: true
+
+sensor.greenwave_powernode_6_woonkamer_power_3:
+  friendly_name: Woonkamer - PowerNode - IPTV - Verbruik
+  hidden: false
+  homebridge_hidden: false
+
+switch.greenwave_powernode_6_woonkamer_switch_3:
+  friendly_name: Woonkamer - PowerNode - IPTV
+  hidden: false
+  homebridge_hidden: true
+
+# GreenWave PowerNode 6 - Woonkamer - Port 4
+
+sensor.greenwave_powernode_6_woonkamer_energy_4:
+  friendly_name: Woonkamer - PowerNode - Sonos - kWh Meter
+  hidden: true
+  homebridge_hidden: true
+
+sensor.greenwave_powernode_6_woonkamer_power_4:
+  friendly_name: Woonkamer - PowerNode - Sonos - Verbruik
+  hidden: false
+  homebridge_hidden: false
+
+switch.greenwave_powernode_6_woonkamer_switch_4:
+  friendly_name: Woonkamer - PowerNode - Sonos
+  hidden: false
+  homebridge_hidden: true
+
+# GreenWave PowerNode 6 - Woonkamer - Port 5
+
+sensor.greenwave_powernode_6_woonkamer_energy_5:
+  friendly_name: Woonkamer - PowerNode - TV - kWh Meter
+  hidden: true
+  homebridge_hidden: true
+
+sensor.greenwave_powernode_6_woonkamer_power_5:
+  friendly_name: Woonkamer - PowerNode - TV - Verbruik
+  hidden: false
+  homebridge_hidden: false
+
+switch.greenwave_powernode_6_woonkamer_switch_5:
+  friendly_name: Woonkamer - PowerNode - TV
+  hidden: false
+  homebridge_hidden: true
+
+# GreenWave PowerNode 6 - Woonkamer - Port 6
+
+sensor.greenwave_powernode_6_woonkamer_energy_6:
+  friendly_name: Woonkamer - PowerNode - Logitech Harmony - kWh Meter
+  hidden: true
+  homebridge_hidden: true
+
+sensor.greenwave_powernode_6_woonkamer_power_6:
+  friendly_name: Woonkamer - PowerNode - Logitech Harmony - Verbruik
+  hidden: false
+  homebridge_hidden: false
+
+switch.greenwave_powernode_6_woonkamer_switch_6:
+  friendly_name: Woonkamer - PowerNode - Logitech Harmony
+  hidden: false
+  homebridge_hidden: true
+
+### Remove Previous Reading Sensors
+
+sensor.greenwave_powernode_6_woonkamer_previous_reading:
+  hidden: true
+  homebridge_hidden: true
+
+sensor.greenwave_powernode_6_woonkamer_previous_reading_2:
+  hidden: true
+  homebridge_hidden: true
+
+sensor.greenwave_powernode_6_woonkamer_previous_reading_3:
+  hidden: true
+  homebridge_hidden: true
+
+sensor.greenwave_powernode_6_woonkamer_previous_reading_4:
+  hidden: true
+  homebridge_hidden: true
+
+sensor.greenwave_powernode_6_woonkamer_previous_reading_5:
+  hidden: true
+  homebridge_hidden: true
+
+sensor.greenwave_powernode_6_woonkamer_previous_reading_6:
+  hidden: true
+  homebridge_hidden: true
+
+sensor.greenwave_powernode_6_woonkamer_previous_reading_7:
+  hidden: true
+  homebridge_hidden: true
+
+sensor.greenwave_powernode_6_woonkamer_previous_reading_8:
+  hidden: true
+  homebridge_hidden: true
+
+sensor.greenwave_powernode_6_woonkamer_previous_reading_9:
+  hidden: true
+  homebridge_hidden: true
+
+sensor.greenwave_powernode_6_woonkamer_previous_reading_10:
+  hidden: true
+  homebridge_hidden: true
+
+sensor.greenwave_powernode_6_woonkamer_previous_reading_11:
+  hidden: true
+  homebridge_hidden: true
+
+sensor.greenwave_powernode_6_woonkamer_previous_reading_12:
+  hidden: true
+  homebridge_hidden: true

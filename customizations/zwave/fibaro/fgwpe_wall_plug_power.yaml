@@ -1,0 +1,17 @@
+# FIBARO System FGWPE Wall Plug - Woonkamer - Stolplamp
+
+switch.fibaro_system_fgwpef_wall_plug_switch:
+  friendly_name: Woonkamer - Stolplamp
+  homebridge_name: Sfeerverlichting
+
+sensor.fibaro_system_fgwpef_wall_plug_energy:
+  friendly_name: Woonkamer - Stolplamp - kWh Meter
+  hidden: true
+  homebridge_hidden: true
+
+sensor.fibaro_system_fgwpef_wall_plug_power:
+  friendly_name: Woonkamer - Stolplamp - Verbruik
+
+sensor.fibaro_system_fgwpef_wall_plug_distance:
+  hidden: true
+  homebridge_hidden: true

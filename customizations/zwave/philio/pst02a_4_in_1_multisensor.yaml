@@ -1,0 +1,34 @@
+#Philio Technology Corporation PST02-A 4 in 1 Multi-Sensor Sensor
+binary_sensor.philio_technology_corporation_pst02a_4_in_1_multisensor_sensor:
+  hidden: true
+  homebridge_hidden: true
+
+sensor.philio_technology_corporation_pst02a_4_in_1_multisensor_access_control:
+  hidden: true
+  homebridge_hidden: true
+
+sensor.philio_technology_corporation_pst02a_4_in_1_multisensor_alarm_level:
+  hidden: true
+  homebridge_hidden: true
+
+sensor.philio_technology_corporation_pst02a_4_in_1_multisensor_alarm_type:
+  hidden: true
+  homebridge_hidden: true
+
+sensor.philio_technology_corporation_pst02a_4_in_1_multisensor_burglar:
+  hidden: true
+  homebridge_hidden: true
+
+sensor.philio_technology_corporation_pst02a_4_in_1_multisensor_luminance:
+  friendly_name: Kantoor- Sensor - Licht
+  hidden: false
+  homebridge_hidden: true
+
+sensor.philio_technology_corporation_pst02a_4_in_1_multisensor_sourcenodeid:
+  hidden: true
+  homebridge_hidden: true
+
+sensor.philio_technology_corporation_pst02a_4_in_1_multisensor_temperature:
+  friendly_name: Kantoor - Sensor - Temperatuur
+  hidden: false
+  homebridge_hidden: true
