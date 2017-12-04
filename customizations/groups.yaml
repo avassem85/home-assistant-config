@@ -1,0 +1,20 @@
+group.default_view2:
+  order: 1
+group.downstairs:
+  order: 2
+group.living_room:
+  order: 3
+group.upstairs:
+  order: 4
+group.power:
+  order: 5
+group.network:
+  order: 6
+group.nas:
+  order: 7
+group.weather:
+  order: 8
+group.ha_system:
+  order: 9
+group.default_view:
+  order: 99

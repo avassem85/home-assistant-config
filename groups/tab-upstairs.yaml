@@ -28,6 +28,7 @@ bathroom:
 bedroom2:
   name: Slaapkamer Elise
   entities:
+    - camera.kids_room
     - light.babykamer
     - group.bedroom2_hue_lighting
     - sensor.babykamer_temperature

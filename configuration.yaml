@@ -58,6 +58,15 @@ tts:
 nest:
   client_id: !secret NEST_CLIENT_ID
   client_secret: !secret NEST_CLIENT_SECRET
+  binary_sensors:
+    monitored_conditions:
+  sensors:
+    monitored_conditions:
+      - 'humidity'
+      - 'operation_mode'
+      - 'temperature'
+      - 'target'
+      - 'hvac_state'
   
 rfxtrx:
   device: /dev/ttyUSB1

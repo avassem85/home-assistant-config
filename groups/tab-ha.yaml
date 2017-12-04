@@ -9,7 +9,7 @@ raspberry:
   name: Raspberry Pi
   entities:
     - sensor.cpu_used
-    - sensor.ram_free
+    - sensor.ram_available
     - sensor.disk_free_
     - sensor.last_boot
     - sensor.since_last_boot_templated

@@ -10,21 +10,21 @@ power:
 current_usage_devices:
   name: Verbruik apparaten
   entities:
-    # - sensor.everspring_an158_plugin_meter_appliance_module_power_8_8
-    - sensor.fibaro_system_fgwpe_wall_plug_power_5_4
-    - sensor.greenwave_powernode_6_port_power_7_8
-    - sensor.greenwave_powernode_6_port_power_7_8_2
-    - sensor.greenwave_powernode_6_port_power_7_8_3
-    - sensor.greenwave_powernode_6_port_power_7_8_4
-    - sensor.greenwave_powernode_6_port_power_7_8_5
-    - sensor.greenwave_powernode_6_port_power_7_8_6
-    - sensor.greenwave_powernode_6_port_power_8_8
-    - sensor.greenwave_powernode_6_port_power_8_8_2
-    - sensor.greenwave_powernode_6_port_power_8_8_3
-    - sensor.greenwave_powernode_6_port_power_8_8_4
-    - sensor.greenwave_powernode_6_port_power_8_8_5
-    - sensor.greenwave_powernode_6_port_power_8_8_6
-    # - sensor.qubino_zmnhda2_flush_dimmer_power_13_8
+    - sensor.everspring_an158_plugin_meter_appliance_module_power
+    - sensor.fibaro_system_fgwpef_wall_plug_power
+    - sensor.greenwave_powernode_6_woonkamer_power
+    - sensor.greenwave_powernode_6_woonkamer_power_2
+    - sensor.greenwave_powernode_6_woonkamer_power_3
+    - sensor.greenwave_powernode_6_woonkamer_power_4
+    - sensor.greenwave_powernode_6_woonkamer_power_5
+    - sensor.greenwave_powernode_6_woonkamer_power_6
+    - sensor.greenwave_powernode_6_kantoor_power
+    - sensor.greenwave_powernode_6_kantoor_power_2
+    - sensor.greenwave_powernode_6_kantoor_power_3
+    - sensor.greenwave_powernode_6_kantoor_power_4
+    - sensor.greenwave_powernode_6_kantoor_power_5
+    - sensor.greenwave_powernode_6_kantoor_power_6
+    - sensor.qubino_zmnhda2_flush_dimmer_power
 
 current_usage_p1meter:
   name: Huidig verbuik

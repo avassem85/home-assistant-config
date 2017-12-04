@@ -12,8 +12,8 @@ office:
     - group.office_hue_lighting
     - group.wardrobe_hue_lighting
     - group.office_devices
-    - sensor.philio_technology_corporation_pst02a_4_in_1_multisensor_temperature_2_1
-    - sensor.philio_technology_corporation_pst02a_4_in_1_multisensor_luminance_2_3
+    - sensor.philio_technology_corporation_pst02a_4_in_1_multisensor_temperature
+    - sensor.philio_technology_corporation_pst02a_4_in_1_multisensor_luminance
 
 office_hue_lighting:
   name: Lampen kantoor
@@ -32,12 +32,12 @@ wardrobe_hue_lighting:
 office_devices:
   name: Computer & Randapparatuur
   entities:
-    - switch.greenwave_powernode_6_port_switch_7_0
-    - switch.greenwave_powernode_6_port_switch_7_0_2
-    - switch.greenwave_powernode_6_port_switch_7_0_3
-    - switch.greenwave_powernode_6_port_switch_7_0_4
-    - switch.greenwave_powernode_6_port_switch_7_0_5
-    - switch.greenwave_powernode_6_port_switch_7_0_6
+    - switch.greenwave_powernode_6_kantoor_switch
+    - switch.greenwave_powernode_6_kantoor_switch_2
+    - switch.greenwave_powernode_6_kantoor_switch_3
+    - switch.greenwave_powernode_6_kantoor_switch_4
+    - switch.greenwave_powernode_6_kantoor_switch_5
+    - switch.greenwave_powernode_6_kantoor_switch_6
 
 loundry_room:
     name: Washok
@@ -48,6 +48,7 @@ stairway_downstairs:
     name: Gang beneden
     entities:
       - light.gang_beneden
-      - sensor.fibaro_system_fgms001_motion_sensor_luminance_3_3
-      - sensor.fibaro_system_fgms001_motion_sensor_temperature_3_1
-      - sensor.fibaro_system_fgms001_motion_sensor_general_3_0
+      - binary_sensor.fibaro_system_fgms001_motion_sensor_sensor
+      - sensor.fibaro_system_fgms001_motion_sensor_luminance
+      - sensor.fibaro_system_fgms001_motion_sensor_temperature
+      - sensor.fibaro_system_fgms001_motion_sensor_general

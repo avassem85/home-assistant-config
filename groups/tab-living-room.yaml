@@ -10,13 +10,6 @@ living_room:
     - group.living_room_media
     - group.living_room_media_devices
 
-living_room_plant:
-  name: Woonkamper Plant
-  entities:
-    - sensor.koubachi_name
-    - sensor.koubachi_temperature_hint
-    - sensor.koubachi_temperature
-
 living_room_climate:
   name: Verwarming woonkamer
   entities:
@@ -27,10 +20,10 @@ living_room_climate:
 living_room_lighting:
   name: Verlichting woonkamer
   entities:
-    - switch.fibaro_system_fgs221_double_relay_switch_2x15kw_switch_11_0
+    - switch.fibaro_system_fgs221_double_relay_switch_2x15kw_switch_2
     - light.woonkamer
     - group.living_room_hue_lighting
-    - switch.fibaro_system_fgwpe_wall_plug_switch_5_0
+    - switch.fibaro_system_fgwpef_wall_plug_switch
 
 living_room_hue_lighting:
   name: Hue Lampen
@@ -54,23 +47,21 @@ dining_room_hue_lighting:
 kitchen_lightning:
   name: Verlichting keuken
   entities:
-    - light.qubino_zmnhda2_flush_dimmer_level_13_0
+    - light.qubino_zmnhda2_flush_dimmer_level
 
 living_room_media:
   name: Media
   entities:
     - remote.woonkamer
-    - sensor.harmony_current_activity
-    - input_select.harmony_activity
     - media_player.sonos_woonkamer
     - light.osmc
 
 living_room_media_devices:
   name: Media
   entities:
-    - switch.greenwave_powernode_6_port_switch_8_0
-    - switch.greenwave_powernode_6_port_switch_8_0_2
-    - switch.greenwave_powernode_6_port_switch_8_0_3
-    - switch.greenwave_powernode_6_port_switch_8_0_4
-    - switch.greenwave_powernode_6_port_switch_8_0_5
-    - switch.greenwave_powernode_6_port_switch_8_0_6
+    - switch.greenwave_powernode_6_woonkamer_switch
+    - switch.greenwave_powernode_6_woonkamer_switch_2
+    - switch.greenwave_powernode_6_woonkamer_switch_3
+    - switch.greenwave_powernode_6_woonkamer_switch_4
+    - switch.greenwave_powernode_6_woonkamer_switch_5
+    - switch.greenwave_powernode_6_woonkamer_switch_6
