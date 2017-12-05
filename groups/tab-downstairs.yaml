@@ -14,6 +14,8 @@ office:
     - group.office_devices
     - sensor.philio_technology_corporation_pst02a_4_in_1_multisensor_temperature
     - sensor.philio_technology_corporation_pst02a_4_in_1_multisensor_luminance
+    - binary_sensor.philio_technology_corporation_pst02a_4_in_1_multisensor_access
+    - binary_sensor.philio_technology_corporation_pst02a_4_in_1_multisensor_motion
 
 office_hue_lighting:
   name: Lampen kantoor

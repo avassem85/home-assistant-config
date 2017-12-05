@@ -73,6 +73,9 @@ rfxtrx:
 
 zwave:
   usb_path: /dev/ttyACM0
+  device_config:
+    sensor.greenwave_powernode_6_kantoor_power:
+      polling_intensity: 1
 
 # Platforms
 light: !include platforms/lights.yaml
@@ -81,6 +84,7 @@ remote: !include platforms/remotes.yaml
 device_tracker: !include platforms/device_trackers.yaml
 sensor: !include_dir_merge_list platforms/sensors
 binary_sensor: !include_dir_merge_list platforms/binary_sensors
+camera: !include_dir_merge_list platforms/cameras
 
 tradfri:
   host: !secret TRADFRI_HOST

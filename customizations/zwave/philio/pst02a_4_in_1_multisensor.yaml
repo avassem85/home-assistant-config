@@ -1,4 +1,30 @@
 #Philio Technology Corporation PST02-A 4 in 1 Multi-Sensor Sensor
+
+sensor.philio_technology_corporation_pst02a_4_in_1_multisensor_luminance:
+  friendly_name: Kantoor - Sensor - Licht
+  hidden: false
+  homebridge_hidden: true
+
+sensor.philio_technology_corporation_pst02a_4_in_1_multisensor_temperature:
+  friendly_name: Kantoor - Sensor - Temperatuur
+  hidden: false
+  homebridge_hidden: true
+
+binary_sensor.philio_technology_corporation_pst02a_4_in_1_multisensor_access:
+  friendly_name: Kantoor- Sensor - Deur
+  hidden: false
+  homebridge_hidden: true
+
+binary_sensor.philio_technology_corporation_pst02a_4_in_1_multisensor_motion:
+  friendly_name: Kantoor- Sensor - Beweging
+  hidden: false
+  homebridge_hidden: true
+
+binary_sensor.philio_technology_corporation_pst02a_4_in_1_multisensor_tamper:
+  friendly_name: Kantoor- Sensor - Knoeien
+  hidden: true
+  homebridge_hidden: true
+
 binary_sensor.philio_technology_corporation_pst02a_4_in_1_multisensor_sensor:
   hidden: true
   homebridge_hidden: true
@@ -18,17 +44,25 @@ sensor.philio_technology_corporation_pst02a_4_in_1_multisensor_alarm_type:
 sensor.philio_technology_corporation_pst02a_4_in_1_multisensor_burglar:
   hidden: true
   homebridge_hidden: true
-
-sensor.philio_technology_corporation_pst02a_4_in_1_multisensor_luminance:
-  friendly_name: Kantoor- Sensor - Licht
-  hidden: false
-  homebridge_hidden: true
-
+  
 sensor.philio_technology_corporation_pst02a_4_in_1_multisensor_sourcenodeid:
   hidden: true
   homebridge_hidden: true
 
-sensor.philio_technology_corporation_pst02a_4_in_1_multisensor_temperature:
-  friendly_name: Kantoor - Sensor - Temperatuur
-  hidden: false
-  homebridge_hidden: true
+# configuration options 
+
+# config 2: 255
+# config 3: 12
+# config 4: 99
+# config 5: 0
+# config 6: 4
+# config 7: 2
+# config 8: 3
+# config 9: 4
+# config 10: 12
+# config 11: 12
+# config 12: 12
+# config 13: 12
+# config 20: 30
+# config 21: 1
+# config 22: 10
