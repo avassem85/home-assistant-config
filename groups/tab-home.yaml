@@ -4,8 +4,8 @@ default_view2:
   entities:
     - sun.sun
     - device_tracker.iphonealex
-    - device_tracker.iphonevananita
     - group.travel_times
+    - camera.current_location
   icon: mdi:home
 
 travel_times:
