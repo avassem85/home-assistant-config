@@ -1,0 +1,9 @@
+sensor.greenwave_powernode_6_kantoor_power_4:
+  ignored: false
+  polling_intensity: 1
+sensor.greenwave_powernode_6_kantoor_power:
+  ignored: false
+  polling_intensity: 1
+sensor.greenwave_powernode_6_kantoor_power_6:
+  ignored: false
+  polling_intensity: 1
