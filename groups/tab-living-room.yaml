@@ -15,7 +15,10 @@ living_room_climate:
   entities:
     - climate.living_room_woonkamer
     - sensor.living_room_thermostat_woonkamer_humidity
-    - binary_sensor.living_room_thermostat_woonkamer_online
+    - sensor.living_room_thermostat_woonkamer_hvac_state
+    - sensor.living_room_thermostat_woonkamer_operation_mode
+    - sensor.living_room_thermostat_woonkamer_target
+    - sensor.living_room_thermostat_woonkamer_temperature
 
 living_room_lighting:
   name: Verlichting woonkamer
