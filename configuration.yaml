@@ -12,6 +12,9 @@ homeassistant:
 # Enables the frontend
 frontend:
 
+# Enables IOS App
+ios:
+
 # Enables configuration UI
 config:
 
@@ -77,11 +80,16 @@ zwave:
     sensor.greenwave_powernode_6_kantoor_power:
       polling_intensity: 1
 
+xiaomi_aqara:
+  gateways:
+    - mac: !secret XIAOMI_MAC
+      key: !secret XIAOMI_KEY
+
 # Platforms
-light: !include platforms/lights.yaml
-media_player: !include platforms/media_players.yaml
-remote: !include platforms/remotes.yaml
-device_tracker: !include platforms/device_trackers.yaml
+light: !include_dir_merge_list platforms/lights
+media_player: !include_dir_merge_list platforms/media_players
+remote: !include_dir_merge_list platforms/remotes
+device_tracker: !include_dir_merge_list platforms/device_trackers
 sensor: !include_dir_merge_list platforms/sensors
 binary_sensor: !include_dir_merge_list platforms/binary_sensors
 camera: !include_dir_merge_list platforms/cameras
@@ -106,3 +114,9 @@ panel_custom:
     sidebar_icon: mdi:home
     url_path: floorplan
     config: !include floorplan.yaml
+
+panel_iframe:
+  pihole:
+    title: Pi-hole
+    icon: mdi:block-helper
+    url: https://avassem.duckdns.org:80/admin/index.php

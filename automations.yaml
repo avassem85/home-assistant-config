@@ -1,10 +1,10 @@
 - id: turn_on_mood_lights
-  alias: Turn on mood lights when sun sets
+  alias: Turn on mood lights
   hide_entity: False
   trigger:
-    platform: sun
-    event: sunset
-    offset: "-00:00:00"
+    - platform: sun
+      event: sunset
+      offset: "-00:00:00"
   action:
     service: homeassistant.turn_on
     entity_id: switch.fibaro_system_fgwpef_wall_plug_switch
@@ -13,8 +13,67 @@
   alias: Turn off mood lights
   hide_entity: False
   trigger:
-    platform: time
-    at: '22:00:00'
+    - platform: time
+      at: '22:00:00'
   action:
     service: homeassistant.turn_off
     entity_id: switch.fibaro_system_fgwpef_wall_plug_switch
+
+- id: turn_on_christmas_lights
+  alias: Turn on christmas lights
+  hide_entity: False
+  trigger:
+    - platform: time
+      at: '7:00'
+    - platform: sun
+      event: sunset
+      offset: "-00:00:00"
+  condition:
+    - condition: time
+      weekday:
+        - mon
+        - tue
+        - wed
+        - thu
+        - fri
+        - sat
+        - sun
+  action:
+    service: homeassistant.turn_on
+    entity_id: switch.everspring_an158_plugin_meter_appliance_module_switch
+
+- id: turn_off_christmas_lights_week
+  alias: Turn off christmas lights week
+  hide_entity: False
+  trigger:
+    - platform: time
+      at: '8:00:00'
+    - platform: time
+      at: '22:00:00'
+  condition:
+    - condition: time
+      weekday:
+        - mon
+        - tue
+        - wed
+        - thu
+        - fri
+  action:
+    service: homeassistant.turn_off
+    entity_id: switch.everspring_an158_plugin_meter_appliance_module_switch
+
+- id: turn_off_christmas_lights_weekend
+  alias: Turn off christmas lights weekend
+  hide_entity: False
+  trigger:
+    - platform: time
+      at: '22:00:00'
+  condition:
+    - condition: time
+      weekday:
+        - sat
+        - sun
+  action:
+    service: homeassistant.turn_off
+    entity_id: switch.everspring_an158_plugin_meter_appliance_module_switch
+

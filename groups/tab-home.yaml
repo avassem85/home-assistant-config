@@ -3,7 +3,7 @@ default_view2:
   view: yes
   entities:
     - sun.sun
-    - device_tracker.iphonealex
+    - device_tracker.ios_iphone_alex
     - group.travel_times
     - camera.current_location
   icon: mdi:home

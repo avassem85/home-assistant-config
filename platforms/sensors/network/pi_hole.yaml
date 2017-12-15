@@ -1,0 +1,4 @@
+- platform: pi_hole
+  host: avassem.duckdns.org:80
+  ssl: true
+  verify_ssl: false

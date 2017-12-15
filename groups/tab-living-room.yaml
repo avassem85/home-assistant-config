@@ -27,6 +27,7 @@ living_room_lighting:
     - light.woonkamer
     - group.living_room_hue_lighting
     - switch.fibaro_system_fgwpef_wall_plug_switch
+    - switch.everspring_an158_plugin_meter_appliance_module_switch
 
 living_room_hue_lighting:
   name: Hue Lampen

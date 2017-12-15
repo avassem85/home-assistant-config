@@ -4,7 +4,7 @@ weather:
   entities:
     - group.darksky
     - group.yr
-    - group.nest_weather
+    - group.br
   icon: mdi:weather-cloudy
 
 darksky:
@@ -35,6 +35,22 @@ darksky:
     - sensor.dark_sky_visibility
     - sensor.dark_sky_wind_bearing
     - sensor.dark_sky_wind_speed
+
+br:
+  name: Buienradar
+  entities: 
+    - sensor.br_stationname
+    - sensor.br_symbol
+    - sensor.br_condition
+    - sensor.br_temperature
+    - sensor.br_ground_temperature
+    - sensor.br_humidity
+    - sensor.br_visibility
+    - sensor.br_pressure
+    - sensor.br_wind_direction
+    - sensor.br_wind_force
+    - sensor.br_wind_speed
+    - sensor.br_wind_gust
 
 yr:
   name: YR Weer

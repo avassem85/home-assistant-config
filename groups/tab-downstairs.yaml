@@ -3,8 +3,22 @@ downstairs:
   view: yes
   entities:
     - group.office
+    - group.storage
     - group.loundry_room
     - group.stairway_downstairs
+    - group.spycam
+
+
+storage:
+  name: Berging
+  entities:
+    - binary_sensor.door_window_sensor_158d0001c20a44
+
+spycam:
+  name: Spycam
+  entities:
+    - camera.spycam
+    - binary_sensor.spycam2
 
 office:
   name: Kantoor
@@ -12,10 +26,12 @@ office:
     - group.office_hue_lighting
     - group.wardrobe_hue_lighting
     - group.office_devices
-    - sensor.philio_technology_corporation_pst02a_4_in_1_multisensor_temperature
-    - sensor.philio_technology_corporation_pst02a_4_in_1_multisensor_luminance
-    - binary_sensor.philio_technology_corporation_pst02a_4_in_1_multisensor_access
-    - binary_sensor.philio_technology_corporation_pst02a_4_in_1_multisensor_motion
+    - sensor.pst02a_kantoor_temperature
+    - sensor.pst02a_kantoor_luminance
+    - binary_sensor.pst02a_kantoor_access
+    - binary_sensor.pst02a_kantoor_motion
+    - binary_sensor.pst02a_kantoor_tamper
+    - binary_sensor.door_window_sensor_158d0001bb50eb
 
 office_hue_lighting:
   name: Lampen kantoor

@@ -5,9 +5,3 @@
     - alex.vanassem@infosupport.com
     - alex@vanassem.eu
     - anitabrueker@gmail.com
-
-- platform: speedtest
-  monitored_conditions:
-    - ping
-    - download
-    - upload

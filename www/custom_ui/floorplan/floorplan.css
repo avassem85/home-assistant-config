@@ -92,12 +92,12 @@ svg, svg * {
 
 /* Light */
 
-.light-off {
-  fill: #000000 !important;
+.light-off ellipse {
+  fill: lightgrey !important;
 }
 
-.light-on {
-  fill: #FFFF00 !important;
+.light-on ellipse {
+  fill: yellow !important;
 }
 
 /* Doorbell */
@@ -141,3 +141,85 @@ svg, svg * {
 .squeezebox-on {
   fill: #2baaa6 !important;
 }
+
+/* Doors */
+
+@keyframes rotateN90 {
+	100% {
+		transform: rotate(-90deg);
+	}
+}
+
+@keyframes rotateResetN90 {
+	0% {
+		transform: rotate(-90deg);
+	}
+	100% {
+		transform: none;
+	}
+}
+
+@keyframes rotate90 {
+	100% {
+		transform: rotate(90deg);
+	}
+}
+
+@keyframes rotateReset90 {
+	0% {
+		transform: rotate(90deg);
+	}
+	100% {
+		transform: none;
+	}
+}
+
+/* Doors that open to the top left */
+#binary_sensor\.pst02a_kantoor_access {
+  transform-origin: center right;
+}
+
+#binary_sensor\.pst02a_kantoor_access.door_closed {
+  animation-name: rotateReset90;
+}
+
+#binary_sensor\.pst02a_kantoor_access.door_open {
+  animation-name: rotate90;
+}
+
+#binary_sensor\.door_window_sensor_158d0001bb50eb {
+  transform-origin: center right;
+}
+
+#binary_sensor\.door_window_sensor_158d0001bb50eb.door_closed {
+  animation-name: rotateResetN90;
+}
+
+#binary_sensor\.door_window_sensor_158d0001bb50eb.door_open {
+  animation-name: rotateN90;
+}
+
+#binary_sensor\.door_window_sensor_158d0001c20a44 {
+  transform-origin: center right;
+}
+
+#binary_sensor\.door_window_sensor_158d0001c20a44.door_closed {
+  animation-name: rotateResetN90;
+}
+
+#binary_sensor\.door_window_sensor_158d0001c20a44.door_open {
+  animation-name: rotateN90;
+}
+
+.door_closed {
+  fill: #008000 !important;
+  animation-duration: 4s;
+}
+
+.door_open {
+  fill: #ff0000 !important;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+}
+
+

@@ -11,6 +11,7 @@ network:
     - group.haveibeenpwned_anita
     - group.speedtest
     - group.peripherals_devices
+    - group.pi_hole
   icon: mdi:server-network
 
 network_devices:
@@ -83,3 +84,15 @@ speedtest:
     - sensor.speedtest_ping
     - sensor.speedtest_upload
     - sensor.speedtest_download
+
+pi_hole:
+  name: Pi-hole
+  entities:
+    - sensor.pihole_ads_blocked_today
+    - sensor.pihole_ads_percentage_blocked_today
+    - sensor.pihole_dns_queries_cached
+    - sensor.pihole_dns_queries_forwarded
+    - sensor.pihole_dns_queries_today
+    - sensor.pihole_dns_unique_clients
+    - sensor.pihole_dns_unique_domains
+    - sensor.pihole_domains_blocked

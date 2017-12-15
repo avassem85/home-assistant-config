@@ -1,0 +1,6 @@
+- platform: synology
+  url: !secret SYNOLOGY_HOSTPORT
+  username: !secret SYNOLOGY_USERNAME
+  password: !secret SYNOLOGY_PASSWORD
+  verify_ssl: false
+  timeout: 60

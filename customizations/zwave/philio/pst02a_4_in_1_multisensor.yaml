@@ -1,53 +1,37 @@
 #Philio Technology Corporation PST02-A 4 in 1 Multi-Sensor Sensor
 
-sensor.philio_technology_corporation_pst02a_4_in_1_multisensor_luminance:
+sensor.pst02a_kantoor_luminance:
   friendly_name: Kantoor - Sensor - Licht
-  hidden: false
-  homebridge_hidden: true
 
-sensor.philio_technology_corporation_pst02a_4_in_1_multisensor_temperature:
+sensor.pst02a_kantoor_temperature:
   friendly_name: Kantoor - Sensor - Temperatuur
-  hidden: false
-  homebridge_hidden: true
 
-binary_sensor.philio_technology_corporation_pst02a_4_in_1_multisensor_access:
-  friendly_name: Kantoor- Sensor - Deur
-  hidden: false
-  homebridge_hidden: true
+binary_sensor.pst02a_kantoor_access:
+  friendly_name: Kantoor- Sensor - Voordeur
 
-binary_sensor.philio_technology_corporation_pst02a_4_in_1_multisensor_motion:
+binary_sensor.pst02a_kantoor_motion:
   friendly_name: Kantoor- Sensor - Beweging
-  hidden: false
-  homebridge_hidden: true
 
-binary_sensor.philio_technology_corporation_pst02a_4_in_1_multisensor_tamper:
+binary_sensor.pst02a_kantoor_tamper:
   friendly_name: Kantoor- Sensor - Knoeien
-  hidden: true
-  homebridge_hidden: true
 
-binary_sensor.philio_technology_corporation_pst02a_4_in_1_multisensor_sensor:
+binary_sensor.pst02a_kantoor_sensor:
   hidden: true
-  homebridge_hidden: true
 
-sensor.philio_technology_corporation_pst02a_4_in_1_multisensor_access_control:
+sensor.pst02a_kantoor_access_control:
   hidden: true
-  homebridge_hidden: true
 
-sensor.philio_technology_corporation_pst02a_4_in_1_multisensor_alarm_level:
+sensor.pst02a_kantoor_alarm_level:
   hidden: true
-  homebridge_hidden: true
 
-sensor.philio_technology_corporation_pst02a_4_in_1_multisensor_alarm_type:
+sensor.pst02a_kantoor_alarm_type:
   hidden: true
-  homebridge_hidden: true
 
-sensor.philio_technology_corporation_pst02a_4_in_1_multisensor_burglar:
+sensor.pst02a_kantoor_burglar:
   hidden: true
-  homebridge_hidden: true
-  
-sensor.philio_technology_corporation_pst02a_4_in_1_multisensor_sourcenodeid:
+
+sensor.pst02a_kantoor_sourcenodeid:
   hidden: true
-  homebridge_hidden: true
 
 # configuration options 
 

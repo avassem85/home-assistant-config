@@ -4,40 +4,37 @@ light.qubino_zmnhda2_flush_dimmer_level:
 
 switch.qubino_zmnhda2_flush_dimmer_switch:
   hidden: true
-  homebridge_hidden: true
 
 light.qubino_zmnhda2_flush_dimmer_step_size:
   hidden: true
-  homebridge_hidden: true
 
 sensor.qubino_zmnhda2_flush_dimmer_energy:
   friendly_name: Keuken - Lampen - kWh Meter
   hidden: true
-  homebridge_hidden: true
 
 sensor.qubino_zmnhda2_flush_dimmer_power:
   friendly_name: Keuken - Lampen - Verbruik
 
 sensor.qubino_zmnhda2_flush_dimmer_exporting:
   hidden: true
-  homebridge_hidden: true
 
 sensor.qubino_zmnhda2_flush_dimmer_interval:
   hidden: true
-  homebridge_hidden: true
+
+sensor.qubino_zmnhda2_flush_dimmer_interval_2:
+  hidden: true
 
 binary_sensor.qubino_zmnhda2_flush_dimmer_sensor:
   hidden: true
-  homebridge_hidden: true
 
 binary_sensor.qubino_zmnhda2_flush_dimmer_sensor_2:
   hidden: true
-  homebridge_hidden: true
 
 sensor.qubino_zmnhda2_flush_dimmer_previous_reading:
   hidden: true
-  homebridge_hidden: true
+
+sensor.qubino_zmnhda2_flush_dimmer_previous_reading_2:
+  hidden: true
 
 sensor.qubino_zmnhda2_flush_dimmer_temperature:
   hidden: true
-  homebridge_hidden: true

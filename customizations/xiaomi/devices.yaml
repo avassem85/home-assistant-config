@@ -1,0 +1,8 @@
+binary_sensor.door_window_sensor_158d0001bb50eb:
+  friendly_name: Kantoor - Sensor - Tussendeur
+
+binary_sensor.door_window_sensor_158d0001c20a44:
+  friendly_name: Berging - Sensor - Deur
+
+binary_sensor.switch_158d0001e010d8:
+  friendly_name: Button

@@ -1,18 +1,14 @@
 binary_sensor.fibaro_system_fgms001_motion_sensor_sensor:
   friendly_name: Gang beneden - Sensor - Beweging
   hidden: false
-  homebridge_hidden: true
 
 sensor.fibaro_system_fgms001_motion_sensor_general:
   hidden: true
-  homebridge_hidden: true
 
 sensor.fibaro_system_fgms001_motion_sensor_luminance:
   friendly_name: Gang beneden - Sensor - Licht
   hidden: false
-  homebridge_hidden: true
 
 sensor.fibaro_system_fgms001_motion_sensor_temperature:
   friendly_name: Gang beneden - Sensor - Temperatuur
   hidden: false
-  homebridge_hidden: true

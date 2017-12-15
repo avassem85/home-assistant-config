@@ -3,15 +3,16 @@
 sensor.everspring_an158_plugin_meter_appliance_module_energy:
   friendly_name: Woonkamer - Kerstverlichting - kWh Meter
   hidden: true
-  homebridge_hidden: true
 
 sensor.everspring_an158_plugin_meter_appliance_module_power:
   friendly_name: Woonkamer - Kerstverlichting - Verbruik
+  hidden: false
 
 switch.everspring_an158_plugin_meter_appliance_module_switch:
   friendly_name: Woonkamer - Kerstverlichting
+  hidden: false
+  homebridge_visible: true
   homebridge_name: Kerstverlichting
 
 sensor.everspring_an158_plugin_meter_appliance_module_previous_reading:
   hidden: true
-  homebridge_hidden: true

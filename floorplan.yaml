@@ -13,22 +13,6 @@
 
       groups:
 
-        - name: Sensors
-          entities:
-             -  sensor.dark_sky_temperature
-          #text_template: '${entity.state ? entity.state : "unknown"}'
-          # An example of rounding up a number, i.e. a temperature of 90.1 becomes 91
-          text_template: '${entity.state ? Math.ceil(entity.state) : "undefined"}'  
-          class_template: '
-            var temp = parseFloat(entity.state.replace("°", ""));
-            if (temp < 10)
-              return "temp-low";
-            else if (temp < 30)
-              return "temp-medium";
-            else
-              return "temp-high";
-            '
-
         - name: Lights
           entities:
             - light.washok_1
@@ -36,6 +20,8 @@
             - light.gang_beneden_1
             - group.office_hue_lighting
             - group.wardrobe_hue_lighting
+            - switch.fibaro_system_fgwpef_wall_plug_switch
+            - switch.everspring_an158_plugin_meter_appliance_module_switch
             - group.living_room_hue_lighting
             - group.dining_room_hue_lighting
             - group.kitchen_lightning
@@ -50,42 +36,22 @@
             domain: homeassistant   # This optional parameter allows you to use other services such as homeassistant.toggle like here.
             service: toggle
 
-        - name: Switches
+        - name: Doors
           entities:
-             - switch.doorbell
-          states:
-            - state: 'on'
-              class: 'doorbell-on'
-            - state: 'off'
-              class: 'doorbell-off'
-
-        - name: NVR
-          entities:
-             - binary_sensor.blue_iris_nvr
-          text_template: '${(entity.state === "on") ? "online" : "offline"}'
+            - binary_sensor.pst02a_kantoor_access
+            - binary_sensor.door_window_sensor_158d0001bb50eb
+            - binary_sensor.door_window_sensor_158d0001c20a44
+            - binary_sensor.spycam2
           states:
             - state: 'off'
-              class: 'danger-text'
+              class: 'door_closed'
             - state: 'on'
-              class: 'success-text'
+              class: 'door_open'
 
-        - name: Alarm Panel
+        - name: Motion
           entities:
-             - alarm_control_panel.alarm
-          states:
-            - state: 'armed_away'
-              class: 'alarm-armed'
-            - state: 'armed_home'
-              class: 'alarm-armed'
-            - state: 'disarmed'
-              class: 'alarm-disarmed'
-
-        - name: Binary sensors
-          entities:
-            - binary_sensor.front_hallway
-            - binary_sensor.kitchen
-            - binary_sensor.master_bedroom
-            - binary_sensor.theatre_room
+            - binary_sensor.fibaro_system_fgms001_motion_sensor_sensor
+            - binary_sensor.pst02a_kantoor_motion
           states:
             - state: 'off'
               class: 'info-background'
@@ -97,29 +63,20 @@
               to_state: 'off'
               duration: 10
 
-        - name: Cameras
+        #  TEMPERATURE SENSORS  #
+        - name: Temperature
           entities:
-            - camera.hallway
-            - camera.driveway
-            - camera.front_door
-            - camera.backyard
-          states:
-            - state: 'idle'
-              class: 'camera-idle'
-              
-#        - name: thermostat_temp
-#          entities:
-#            - climate.downstairs
-#            - climate.upstairs
-#          text_template: '${entity.attributes.current_temperature ? entity.attributes.current_temperature : "undefined"}'
-#
-# The above text_template uses extended attributes from the climate.* objects to get current temperature.
-
-#        - name: text_states
-#          entities:
-#            - sensor.downstairs_thermostat_humidity
-#            - sensor.dark_sky_temperature
-#            - sensor.last_message
-#          text_template: '${entity.state ? entity.state.replace(/\s{2,}/g,"") : "undefined"}'
-#
-# The above text_template uses jQuery syntax to search and replace any instance of 2 consecutive (or more) spaces in a string of text.
+            - sensor.living_room_thermostat_woonkamer_temperature
+            - sensor.badkamer_temperature
+            - sensor.pst02a_kantoor_temperature
+            - sensor.fibaro_system_fgms001_motion_sensor_temperature
+          text_template: '${entity.state ? entity.state + "" : "-"}'
+          class_template: 'return "static-text";'
+        
+        #  HUMIDITY SENSORS  #
+        - name: Humidity
+          entities:
+            - sensor.living_room_thermostat_woonkamer_humidity
+            - sensor.badkamer_humidity
+          text_template: '${entity.state ? entity.state + "%" : "-"}'
+          class_template: 'return "static-text";'

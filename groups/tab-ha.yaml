@@ -11,9 +11,11 @@ raspberry:
     - sensor.cpu_used
     - sensor.ram_available
     - sensor.disk_free_
+    - sensor.ipv4_address_eth0
+    - sensor.ipv6_address_eth0
+    - sensor.packets_received_eth0
+    - sensor.packets_sent_eth0
+    - sensor.received_eth0
+    - sensor.sent_eth0
     - sensor.last_boot
     - sensor.since_last_boot_templated
-
-home_assistant:
-  name: Raspberry Pi
-  entities:
